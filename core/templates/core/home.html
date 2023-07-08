@@ -1,0 +1,45 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}
+Home
+
+{% endblock title%}
+{% block content %}
+<div class="mt-5">
+    <div class="text-center">
+        <img src="{% static 'core/images/logo.jpg' %}" alt="logo" class="img-thumbnail" width="250px" height="150px">
+    </div>
+    <div class="mt-5 text-white mx-5 text">
+        <h1 class="font-weight-bold st-font"> Hello, </h1>
+        <div class="px-4" style="line-height:2rem;">
+
+            <p style="text-indent:100px;"> I am <b class="text-warning">Aamir Hussain</b> python/Django developer with
+                expertise in developing web apps using Django Apart from this i also have a knowledge about manual
+                testing, debugging, and team
+                collaboration. I specialize in developing modular and scalable software solutions optimized for
+                performance.
+                With strong attention to detail, I have a proven track record in delivering high-quality code.</p>
+
+            <p> I have experience working as a Validation Engineer at<b class="text-warning"> UST Global </b>, where I
+                am proficient in Python and
+                skilled in manual and automation testing. I am adept at troubleshooting hardware issues and have a solid
+                understanding of hardware systems. Additionally, I have hands-on experience in <b class="text-warning">full-stack
+                    development </b>
+                through a Python internship at Pentagon Space, where I built efficient web applications using
+                Django, HTML5, CSS3, and MySQL. Passionate about problem-solving, I excel at identifying and debugging
+                issues. My goal is to contribute to
+                the success of companies by leveraging my skills in <b class="text-warning">Python, Django, manual
+                    testing, debugging,</b> and
+                collaborative teamwork.</p>
+        </div>
+
+
+    </div>
+
+    <div class="text-center">
+        <a href="" class="btn btn-outline-warning my-3 mx-5"> Hire me</a>
+        <a href="" class="btn btn-outline-info my-3"> Contact </a>
+    </div>
+</div>
+{% endblock content %}

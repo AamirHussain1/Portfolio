@@ -1,0 +1,33 @@
+{% extends 'core/base.html' %}
+{% block title %}
+MyProjects
+{% endblock title%}
+{% load static %}
+{% block content %}
+<div class="d-flex align-items-end justify-content-between border-bottom pb-3 mt-5">
+    <h3 class="my-0 text-warning">PROJECTS</h3>
+    <div>
+        <a href="{% url 'add_project' %}" class="btn btn-primary">Add More Project</a>
+    </div>
+</div>
+
+<main class="container my-4">
+    <div class="row">
+        {% for project in projects %}
+        <div class="col-md-3 mb-3">
+            <div class="card shadow h-100">
+                <a href=""> <img src="{{ project.image.url }}" class="card-image-top" alt="..." height="200px"> </a>
+                <div class="card-body">
+                    <p class="card-text">{{ project.project_name }}</p>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">{{ project.last_updated }}</small>
+                    </div>
+                </div>
+                <a href="{{ project.project_link }}" target="_blank" class="btn btn-primary">More Info</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</main>
+
+{% endblock content %}

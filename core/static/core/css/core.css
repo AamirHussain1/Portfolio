@@ -1,0 +1,37 @@
+.st-font {
+ font-family: 'Pacifico', cursive;
+font-family: 'Satisfy', cursive;
+}
+
+html, body{
+height:100%;
+
+}
+
+.container-fluid{
+min-height:100%
+}
+.text {
+text-align: justify;
+
+}
+.border-right {
+  border-right: 1px solid;
+  }
+
+.nav-link {
+  color: whitesmoke;
+}
+
+.nav-link:hover {
+  color: black;
+  background-color:#e9cd79;
+}
+
+.nav-link.active {
+  color: black;
+  background-color:#ffc107;
+  font-weight:bold;
+}
+
+
