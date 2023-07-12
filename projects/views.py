@@ -4,7 +4,7 @@ from .forms import ProjectForm
 
 
 def project(request):
-    projects = Project.objects.all()
+    projects = Project.objects.all().order_by('-id')
     context = {'projects': projects,
                'project': 'active'}
     return render(request, 'projects/projects.html', context)
